@@ -36,20 +36,20 @@ function Hero() {
       </div>
       <div className={styles.info}>
         <h1>
-          Harris
+          Krishna
           <br />
-          Johnsen
+          Singh
         </h1>
         <h2>Frontend Developer</h2>
         <span>
-          <a href="https://twitter.com/" target="_blank">
-            <img src={twitterIcon} alt="Twitter icon" />
+          <a href="https://www.linkedin.com/in/krishna-singh-5a2244196" target="_blank">
+            <img src={linkedinIcon} alt="Linkedin icon" />
           </a>
-          <a href="https://github.com/" target="_blank">
+          <a href="https://www.github.com/Szkrishna" target="_blank">
             <img src={githubIcon} alt="Github icon" />
           </a>
-          <a href="https://linkedin.com/" target="_blank">
-            <img src={linkedinIcon} alt="Linkedin icon" />
+          <a href="https://www.x.com/Krishna54418609" target="_blank">
+            <img src={twitterIcon} alt="Twitter icon" />
           </a>
         </span>
         <p className={styles.description}>
