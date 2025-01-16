@@ -1,27 +1,3 @@
-<<<<<<< HEAD
-import './App.css';
-// import Header from './sections/Header/Header';
-import Hero from './sections/Hero/Hero';
-import Projects from './sections/Projects/Projects';
-import Skills from './sections/Skills/Skills';
-import Contact from './sections/Contact/Contact';
-import Footer from './sections/Footer/Footer';
-
-function App() {
-  return (
-    <>
-      {/* <Header /> */}
-      <Hero />
-      <Projects />
-      <Skills />
-      <Contact />
-      <Footer />
-    </>
-  );
-}
-
-export default App;
-=======
 // import React from 'react';
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -52,5 +28,4 @@ const App = () => {
   )
 }
 
-export default App
->>>>>>> 14ad40c9b94cb2d9927b53e081bf1bdc88d5eefc
+export default App;
