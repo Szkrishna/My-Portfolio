@@ -19,12 +19,12 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App.jsx';
 import './index.css';
 import { ThemeProvider } from './common/ThemeContext.jsx';
-import Header from './sections/Header/Header';
+// import Header from './sections/Header/Header';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Router>
-      <Header />
+      {/* <Header /> */}
       <ThemeProvider>
         <App />
       </ThemeProvider>
