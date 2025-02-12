@@ -32,10 +32,10 @@ const Hero = () => {
             </div> */}
 
             <div className="flex flex-wrap">
-                <div className="w-full lg:w-1/2 py-[30px]">
+                <div className="w-full lg:w-1/2">
                     <div className="flex flex-col items-center lg:items-start">
                         <motion.h1 variants={{hidden: { opacity: 0, y: -50 }, visible: { opacity: 1, y: 0, transition: { duration: 1.5 } },}}
-                            initial="hidden" animate="visible" className="pb-[36px] text-6xl font-thin tracking-tight lg:mt-[24px] lg:text-8xl">
+                            initial="hidden" animate="visible" className="pb-[36px] text-6xl font-thin tracking-tight lg:text-8xl">
                             Krishna Singh
                         </motion.h1>
 
@@ -51,9 +51,9 @@ const Hero = () => {
                     </div>
                 </div>
 
-                <div className="w-full lg:w-1/2 lg:p-8">
+                <div className="w-full lg:w-1/2">
                     <div className="flex justify-center">
-                        <motion.img initial={{x: 100, opacity: 0}} animate={{x: 0, opacity: 1}} transition={{duration: 1.5, delay: 1.5}} className="rounded-2xl" src={profilePic} alt="ks-profile-img" />
+                        <motion.img initial={{x: 100, opacity: 0}} animate={{x: 0, opacity: 1}} transition={{duration: 1.5, delay: 1.5}} className="rounded-2xl max-h-[400px]" src={profilePic} alt="ks-profile-img" />
                     </div>
                 </div>
             </div>

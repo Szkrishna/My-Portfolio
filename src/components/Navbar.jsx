@@ -15,7 +15,7 @@ const Navbar = () => {
           </p>
         </div>
       </div>
-      <div className="m-8 flex items-center justify-center gap-4 text-2xl">
+      <div className="flex items-center justify-center gap-4 text-2xl">
         <Link to="https://www.linkedin.com/in/krishna-singh-5a2244196/" target="_blank">
           <FaLinkedin />
         </Link>

@@ -6,5 +6,6 @@
 @tailwind utilities;
 
 :root {
-    font-family: 'Outfit', sans-serif; /* Update to Outfit or keep both */
+    font-family: 'Outfit', sans-serif;
+    max-width: 100vw;
 }
