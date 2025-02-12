@@ -9,9 +9,7 @@ function Footer() {
   const linkedinIcon = linkedinDark;
   return (
     <section id="footer" className={styles.container}>
-      {/* <div>
-        <p>&copy; 2024 Krishna Singh.</p>
-      </div> */}
+
       <span>
         <a href="https://www.linkedin.com/in/krishna-singh-5a2244196" target="_blank">
           <img src={linkedinIcon} alt="Linkedin icon" className={styles.img_height}/>
@@ -23,9 +21,6 @@ function Footer() {
           <img src={twitterIcon} alt="Twitter icon" className={styles.img_height} />
         </a>
       </span>
-      {/* <div>
-        <p> All rights reserved.</p>
-      </div> */}
     </section>
   );
 }
