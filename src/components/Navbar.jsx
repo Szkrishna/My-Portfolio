@@ -1,7 +1,5 @@
 import React from 'react';
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { FaHackerrank } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaHackerrank, FaFileAlt } from "react-icons/fa";
 import { SiCodingninjas } from "react-icons/si";
 import { Link } from 'react-router-dom';
 
@@ -27,6 +25,9 @@ const Navbar = () => {
         </Link>
         <Link to="https://www.naukri.com/code360/profile/0cc282c5-cc07-4aa1-92fd-e827575a2843" target="_blank">
           <SiCodingninjas />
+        </Link>
+        <Link to="https://drive.google.com/file/d/1je0PiGzCMeypxA6B3zgIvIbW19gt8NI1/view?usp=sharing" target="_blank">
+          <FaFileAlt />
         </Link>
       </div>
     </nav>
