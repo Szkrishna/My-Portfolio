@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav className="marker:mb-20 flex items-center justify-between py-6">
+    <nav className="marker:mb-20 flex items-center justify-between py-12">
       <div className="flex flex-shrink-0 items-center">
         <div className="mx-2 w-auto">
           <p className="text-5xl font-medium bg-gradient-to-r from-green-700 to-red-700 via-blue-700 bg-clip-text text-transparent tracking-tight">

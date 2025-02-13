@@ -1,6 +1,6 @@
 // import React from 'react';
 import { HERO_CONTENT } from "../constants";
-import profilePic from "../assets/portfolio_pic2.png";
+import profilePic from "../assets/hero.png";
 import { motion } from "framer-motion";
 
 const container = (delay) => ({
@@ -13,7 +13,7 @@ const container = (delay) => ({
 })
 const Hero = () => {
     return (
-        <div className="border-b border-neutral-300 pb-[24px]">
+        <div className="border-b border-neutral-300 pb-[60px]">
             <div className="flex flex-wrap">
                 <div className="w-full lg:w-1/2">
                     <div className="flex flex-col items-center lg:items-start">
