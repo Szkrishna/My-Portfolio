@@ -2,7 +2,7 @@
 import { CONTACT } from "../constants";
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
-import { Tooltip } from "react-tooltip";
+// import { Tooltip } from "react-tooltip";
 import { SiCodingninjas } from "react-icons/si";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { FaLinkedin, FaGithub, FaHackerrank, FaFileAlt } from "react-icons/fa";
@@ -40,34 +40,28 @@ const Contacts = () => {
           <Link to="https://www.linkedin.com/in/krishna-singh-5a2244196/" target="_blank" data-tooltip-id="linkedin">
             <FaLinkedin />
           </Link>
-          <Tooltip id="linkedin" place="bottom" content="LinkedIn" style={{ fontSize: "16px" }} />
+          {/* <Tooltip id="linkedin" place="bottom" content="LinkedIn" style={{ fontSize: "16px" }} /> */}
 
           <Link to="https://github.com/Szkrishna" target="_blank" data-tooltip-id="github">
             <FaGithub />
           </Link>
-          <Tooltip id="github" place="bottom" content="GitHub" style={{ fontSize: "16px" }} />
+          {/* <Tooltip id="github" place="bottom" content="GitHub" style={{ fontSize: "16px" }} /> */}
 
           <Link to="https://www.hackerrank.com/profile/krisnas9792" target="_blank" data-tooltip-id="hackerrank">
             <FaHackerrank />
           </Link>
-          <Tooltip id="hackerrank" place="bottom" content="HackerRank" style={{ fontSize: "16px" }} />
+          {/* <Tooltip id="hackerrank" place="bottom" content="HackerRank" style={{ fontSize: "16px" }} /> */}
 
           <Link to="https://www.naukri.com/code360/profile/0cc282c5-cc07-4aa1-92fd-e827575a2843" target="_blank" data-tooltip-id="coding-ninjas">
             <SiCodingninjas />
           </Link>
-          <Tooltip id="coding-ninjas" place="bottom" content="Coding Ninjas" style={{ fontSize: "16px" }} />
+          {/* <Tooltip id="coding-ninjas" place="bottom" content="Coding Ninjas" style={{ fontSize: "16px" }} /> */}
 
           <Link to="https://drive.google.com/file/d/1je0PiGzCMeypxA6B3zgIvIbW19gt8NI1/view?usp=sharing" target="_blank" data-tooltip-id="cv">
             <FaFileAlt />
           </Link>
-          <Tooltip id="cv" place="bottom" content="Download CV" style={{ fontSize: "16px" }} />
+          {/* <Tooltip id="cv" place="bottom" content="Download CV" style={{ fontSize: "16px" }} /> */}
         </div>
-
-        {/* <div className="mt-8 mb-16">
-          <a href="#contact-form" className="inline-block bg-white text-rose-500 hover:bg-rose-500 hover:text-white py-2 px-5 rounded-full text-lg font-semibold transition duration-300">
-            Send a Message
-          </a>
-        </div> */}
       </div>
     </div>
   );

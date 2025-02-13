@@ -13,6 +13,16 @@ const Navbar = () => {
             KS
           </p>
         </div>
+        <div className="hidden sm:ml-8 sm:block">
+          <div className="flex space-x-2">
+            <a href="#hero" className="rounded-md px-3 py-2 text-md font-medium text-gray-200 hover:bg-gray-500 hover:text-white" aria-current="page">Home</a>
+            <a href="#about" className="rounded-md px-3 py-2 text-md font-medium text-gray-200 hover:bg-gray-500 hover:text-white">About</a>
+            <a href="#technologies" className="rounded-md px-3 py-2 text-md font-medium text-gray-200 hover:bg-gray-500 hover:text-white">Technologies</a>
+            <a href="#experience" className="rounded-md px-3 py-2 text-md font-medium text-gray-200 hover:bg-gray-500 hover:text-white">Experience</a>
+            <a href="#projects" className="rounded-md px-3 py-2 text-md font-medium text-gray-200 hover:bg-gray-500 hover:text-white">Projects</a>
+            <a href="#contact" className="rounded-md px-3 py-2 text-md font-medium text-gray-200 hover:bg-gray-500 hover:text-white">Contact</a>
+          </div>
+        </div>
       </div>
       <div className="flex items-center justify-center gap-4 text-2xl text-white">
         <Link to="https://www.linkedin.com/in/krishna-singh-5a2244196/" target="_blank" data-tooltip-id="linkedin">

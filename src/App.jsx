@@ -12,12 +12,12 @@ function App() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <About />
-      <Technologies />
-      <Experience />
-      <Projects />
-      <Contacts />
+      <Hero id="hero" />
+      <About id="about" />
+      <Technologies id="technologies" />
+      <Experience id="experience" />
+      <Projects id="projects" />
+      <Contacts id="contact" />
     </>
   );
 }
