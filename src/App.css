@@ -24,8 +24,8 @@ html {
 
 body {
   background-color: var(--background-color);
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   margin: 0 auto 60px;
   overflow-x: hidden;
 }

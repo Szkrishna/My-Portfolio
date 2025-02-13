@@ -13,8 +13,8 @@ const container = (delay) => ({
 })
 const Hero = () => {
     return (
-        <div className="border-b border-neutral-300 pb-[60px]">
-            <div className="flex flex-wrap">
+        <div className="border-b border-neutral-300 lg:mt-[60px]">
+            <div className="flex flex-wrap lg:py-[100px] lg:px-[180px]">
                 <div className="w-full lg:w-1/2">
                     <div className="flex flex-col items-center lg:items-start">
                         <motion.h1 variants={{hidden: { opacity: 0, y: -50 }, visible: { opacity: 1, y: 0, transition: { duration: 1.5 } },}}
@@ -36,7 +36,7 @@ const Hero = () => {
 
                 <div className="w-full lg:w-1/2">
                     <div className="flex justify-center">
-                        <motion.img initial={{x: 100, opacity: 0}} animate={{x: 0, opacity: 1}} transition={{duration: 1.5, delay: 1.5}} className="rounded-2xl max-h-[390px]" src={profilePic} alt="ks-profile-img" />
+                        <motion.img initial={{x: 100, opacity: 0}} animate={{x: 0, opacity: 1}} transition={{duration: 1.5, delay: 1.5}} className="rounded-2xl max-h-[370px]" src={profilePic} alt="ks-profile-img" />
                     </div>
                 </div>
             </div>
