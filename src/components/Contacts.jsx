@@ -11,7 +11,7 @@ const Contacts = () => {
   return (
     <div className="mb-8">
       <motion.h2 whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: -100 }} transition={{ duration: 1 }}
-        className="mb-12 text-center text-4xl font-bold text-emerald-400">
+        className="mb-12 text-center text-4xl font-bold">
         Get in Touch
       </motion.h2>
 
@@ -52,9 +52,9 @@ const Contacts = () => {
         <motion.p whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: 100 }} transition={{ duration: 1.5 }}
           className="my-2 text-lg flex items-center justify-center gap-2">
           <FaEnvelope className="text-lg" />
-          <a href={`mailto:${CONTACT.email}`} className="text-gray-200 hover:text-white transition duration-300">
             {CONTACT.email}
-          </a>
+          {/* <a href={`mailto:${CONTACT.email}`} className="text-gray-200 hover:text-white transition duration-300">
+          </a> */}
         </motion.p>
 
         <motion.p whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: 50 }} transition={{ duration: 1 }}
