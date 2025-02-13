@@ -16,21 +16,21 @@ export const EXPERIENCES = [
     role: "Project Engineer 2",
     company: "Oges Solutions",
     description: `Led a team in developing and maintaining web applications using JavaScript, TypeScript, Angular, React.js, and Node.js, Python, FastAPI. Implemented RESTful APIs and integrated with MySQL and MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["TypeScript", "Angular", "React.js", "TailwindCSS", "Python(FastAPI)", "Node.js", "MySQL", "MongoDB"],
+    technologies: ["HTML", "CSS", "Javascript", "TypeScript", "Angular", "React.js", "TailwindCSS", "Node.js", "Express.js", "MongoDB"],
   },
   {
     year: "July 2023 - Mar 2024",
     role: "Project Engineer",
     company: "Oges Solutions",
     description: `Designed, developed and maintained web applications using Angular and TypeScript, ensuring dynamic and responsive user interfaces. Utilized HTML and CSS to create visually appealing and user-friendly designs. Integrated FastAPI backend services with MySQL databases for efficient data handling. Optimized frontend performance with JavaScript best practices.`,
-    technologies: ["Javascript", "TypeScript", "Angular", "BootStrap", "Python(FastAPI)", "JSON", "Jquery", "MySQL"],
+    technologies: ["HTML", "CSS", "Javascript", "TypeScript", "Angular", "BootStrap", "Python(FastAPI)", "JSON", "Jquery", "MySQL"],
   },
   {
     year: "Mar 2022 - Mar 2023",
     role: "Software Engineer",
     company: "Coforge",
     description: `Developed and maintained web applications using JavaScript, React.js, and Python. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["HTML", "CSS", "JavaScript", "React.js", "Python", "MySQL"],
+    technologies: ["HTML", "CSS", "JavaScript", "TypeScript", "Python", "MySQL"],
   },
   {
     year: "Aug 2021 - Oct 2021",
@@ -46,7 +46,7 @@ export const PROJECTS = [
     title: "Snappy",
     image: project7,
     description: "The Chat App is a real-time messaging application built with a React frontend and Node.js backend. The frontend utilizes React to provide a responsive and dynamic UI, while the backend is powered by Express.js and communicates with the frontend using Socket.io for real-time updates. The application allows users to send and receive messages instantly, with support for emojis via the emoji-picker-react library. It is designed to provide a seamless, interactive chat experience. The backend integrates MongoDB (via Mongoose) for data storage, including user authentication and message history management. Socket.io is used to handle real-time communication, allowing users to join rooms and send/receive messages in real-time. The app also features user authentication and password encryption via bcrypt.",
-    technologies: ["React", "React Router", "React Toastify", "Axios", "Node.js", "Express.js", "Socket.io", "MongoDB", "bcrypt", "dotenv", "CORS"],
+    technologies: ["React", "React Router", "React Toastify", "Socket.io-client", "Axios", "Node.js", "Express.js", "Socket.io", "MongoDB", "bcrypt", "dotenv", "CORS"],
   },
   {
     title: "Nik Travels",
@@ -64,7 +64,7 @@ export const PROJECTS = [
     title: "Bhoomi Properties",
     image: project4,
     description: "Developed a comprehensive Real Estate Property Application using Angular, Python (FastAPI), and MySQL, offering users a platform to browse properties, view detailed information, track ongoing projects, read real estate blogs, and explore testimonials. This application caters to property seekers and real estate professionals, delivering an engaging and informative experience.",
-    technologies: ["Angular", "RxJS", "Angular Material", "Leaflet", "Bootstrap", "Tailwind CSS", "Python", "FastAPI", "MySql"],
+    technologies: ["Angular", "RxJS", "Angular Material", "Leaflet", "Bootstrap", "Tailwind CSS", "Python", "FastAPI", "MySQL"],
   },
   {
     title: "Gemini Clone",
@@ -76,13 +76,13 @@ export const PROJECTS = [
     title: "My Todo's List",
     image: project2,
     description: "Developed a full-stack To-Do List Application using React.js for the frontend and Node.js with MySQL for the backend. The application allows users to create, update, delete, and manage tasks efficiently with a clean and responsive UI.",
-    technologies: ["JavaScript", "React", "Node.js", "MySql"],
+    technologies: ["JavaScript", "SCSS", "React", "Node.js", "MySQL"],
   },
   {
     title: "New Travel",
     image: project1,
     description: "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "JavaScript"],
+    technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
   }
 ];
 
