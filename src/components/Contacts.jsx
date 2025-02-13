@@ -1,19 +1,19 @@
 // import React from 'react';
 import { CONTACT } from "../constants";
 import { motion } from "framer-motion";
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa"; // Importing icons
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 const Contacts = () => {
   return (
-    <div>
+    <div className="mb-8">
       <motion.h2 whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: -100 }} transition={{ duration: 1 }} 
-        className="mb-8 text-center text-4xl font-bold text-emerald-600">
+        className="mb-8 text-center text-4xl font-bold text-emerald-400">
         Get in Touch
       </motion.h2>
       
       <div className="max-w-3xl mx-auto text-center">
         <motion.p whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -100 }} transition={{ duration: 1.5 }} 
-          className="my-4 text-lg flex items-center justify-center gap-2">
+          className="my-6 text-lg flex items-center justify-center gap-2">
           <FaMapMarkerAlt className="text-2xl" />
           {CONTACT.address}
         </motion.p>
@@ -32,11 +32,11 @@ const Contacts = () => {
           </a>
         </motion.p>
 
-        <div className="mt-8 mb-16">
-          <a href="#contact-form" className="inline-block bg-white text-rose-500 hover:bg-rose-400 hover:text-white py-3 px-6 rounded-full text-lg font-semibold transition duration-300">
+        {/* <div className="mt-8 mb-16">
+          <a href="#contact-form" className="inline-block bg-white text-rose-500 hover:bg-rose-500 hover:text-white py-2 px-5 rounded-full text-lg font-semibold transition duration-300">
             Send a Message
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );
