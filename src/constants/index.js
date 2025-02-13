@@ -45,51 +45,44 @@ export const PROJECTS = [
   {
     title: "Snappy",
     image: project7,
-    description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+    description: "The Chat App is a real-time messaging application built with a React frontend and Node.js backend. The frontend utilizes React to provide a responsive and dynamic UI, while the backend is powered by Express.js and communicates with the frontend using Socket.io for real-time updates. The application allows users to send and receive messages instantly, with support for emojis via the emoji-picker-react library. It is designed to provide a seamless, interactive chat experience. The backend integrates MongoDB (via Mongoose) for data storage, including user authentication and message history management. Socket.io is used to handle real-time communication, allowing users to join rooms and send/receive messages in real-time. The app also features user authentication and password encryption via bcrypt.",
+    technologies: ["React", "React Router", "React Toastify", "Axios", "Node.js", "Express.js", "Socket.io", "MongoDB", "bcrypt", "dotenv", "CORS"],
   },
   {
     title: "Nik Travels",
     image: project6,
-    description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+    description: "Built a dynamic and interactive Travel Booking platform with an engaging user experience, designed for travelers to explore various destinations, book tours, and get detailed information about their travel options. This project integrates smooth animations, a responsive layout, and modern features to help users find and book their dream vacations easily.",
+    technologies: ["React", "Tailwind CSS", "React Slick", "React Hook Form", "React Router DOM", "React Icons", "Framer Motion", "Clerk", "Node.js", "Express.js", "MongoDB"],
   },
   {
     title: "Portfolio Website",
     image: project5,
-    description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+    description: "Created a sleek and interactive Portfolio website to showcase my skills, projects, and achievements. Built using Next.js, React, and Tailwind CSS, this website provides a modern, fast, and responsive user experience. The site features smooth animations, a clean design, and easy navigation to highlight my work across various technologies.",
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion", "PostCSS & Autoprefixer", "React Icons", "React Tooltip"],
   },
   {
     title: "Bhoomi Properties",
     image: project4,
-    description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+    description: "Developed a comprehensive Real Estate Property Application using Angular, Python (FastAPI), and MySQL, offering users a platform to browse properties, view detailed information, track ongoing projects, read real estate blogs, and explore testimonials. This application caters to property seekers and real estate professionals, delivering an engaging and informative experience.",
+    technologies: ["Angular", "RxJS", "Angular Material", "Leaflet", "Bootstrap", "Tailwind CSS", "Python", "FastAPI", "MySql"],
   },
   {
     title: "Gemini Clone",
     image: project3,
-    description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+    description: "Built a Google Gemini Clone leveraging React.js for the frontend and the Google Generative AI API to generate responses. The application mimics the core functionalities of Google Gemini, allowing users to interact with a sophisticated AI model for content generation and intelligent conversations",
+    technologies: ["React", "Vite", "TypeScript", "Google Generative AI API"],
   },
   {
-    title: "My Todo's",
+    title: "My Todo's List",
     image: project2,
-    description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+    description: "Developed a full-stack To-Do List Application using React.js for the frontend and Node.js with MySQL for the backend. The application allows users to create, update, delete, and manage tasks efficiently with a clean and responsive UI.",
+    technologies: ["JavaScript", "React", "Node.js", "MySql"],
   },
   {
     title: "New Travel",
     image: project1,
-    description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+    description: "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
+    technologies: ["HTML", "CSS", "JavaScript"],
   }
 ];
 
