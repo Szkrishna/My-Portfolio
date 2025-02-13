@@ -1,6 +1,6 @@
 // import React from 'react';
 import { HERO_CONTENT } from "../constants";
-import profilePic from "../assets/home-img.jpg";
+import profilePic from "../assets/portfolio_pic2.png";
 import { motion } from "framer-motion";
 
 const container = (delay) => ({
