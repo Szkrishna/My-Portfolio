@@ -1,11 +1,11 @@
 // import React from 'react';
 import { CONTACT } from "../constants";
 import { motion } from "framer-motion";
-import { Link } from 'react-router-dom';
-import { Tooltip } from "react-tooltip";
-import { SiCodingninjas } from "react-icons/si";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
-import { FaLinkedin, FaGithub, FaHackerrank, FaFileAlt } from "react-icons/fa";
+// import { Link } from 'react-router-dom';
+// import { Tooltip } from "react-tooltip";
+// import { SiCodingninjas } from "react-icons/si";
+// import { FaLinkedin, FaGithub, FaHackerrank, FaFileAlt } from "react-icons/fa";
 
 const Contacts = () => {
   return (
