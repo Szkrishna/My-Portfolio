@@ -11,11 +11,11 @@ const Contacts = () => {
   return (
     <div className="mb-8">
       <motion.h2 whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: -100 }} transition={{ duration: 1 }}
-        className="mb-12 text-center text-4xl font-bold">
+        className="mb-8 text-center text-4xl font-bold">
         Get in Touch
       </motion.h2>
 
-      <div className="my-4 flex items-center justify-center gap-4 text-2xl text-white">
+      {/* <div className="my-4 flex items-center justify-center gap-4 text-2xl text-white">
         <Link to="https://www.linkedin.com/in/krishna-singh-5a2244196/" target="_blank" data-tooltip-id="linkedin">
           <FaLinkedin />
         </Link>
@@ -40,7 +40,7 @@ const Contacts = () => {
           <FaFileAlt />
         </Link>
         <Tooltip id="cv" place="top" content="Download CV" style={{ fontSize: "16px" }} />
-      </div>
+      </div> */}
 
       <div className="max-w-3xl mx-auto text-center">
         <motion.p whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -100 }} transition={{ duration: 1.5 }}
