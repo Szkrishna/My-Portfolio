@@ -13,22 +13,22 @@ const container = (delay) => ({
 })
 const Hero = () => {
     return (
-        <div className="border-b border-neutral-300 lg:mt-[80px]">
-            <div className="flex flex-wrap lg:py-[100px] lg:px-[180px]">
+        <div className="border-b border-neutral-300 lg:mt-[80px] px-8">
+            <div className="flex flex-wrap lg:py-[100px] lg:px-[180px] pt-[160px] pb-[80px]">
                 <div className="w-full lg:w-1/2">
-                    <div className="flex flex-col items-center lg:items-start">
+                    <div className="flex flex-col items-start sm:items-start lg:items-start">
                         <motion.h1 variants={{hidden: { opacity: 0, y: -50 }, visible: { opacity: 1, y: 0, transition: { duration: 1.5 } },}}
                             initial="hidden" animate="visible" className="pb-[36px] text-6xl font-thin tracking-tight lg:text-8xl">
                             Krishna Singh
                         </motion.h1>
 
                         <motion.span variants={{hidden: { opacity: 0, scale: 0.8 }, visible: { opacity: 1, scale: 1, transition: { duration: 1.5, delay: 0.5 } },}}
-                            initial="hidden" animate="visible" className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent">
+                            initial="hidden" animate="visible" className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent ms-1 lg:ms-2">
                             Full Stack Developer
                         </motion.span>
 
                         <motion.p variants={{hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1.5, delay: 1 } },}}
-                            initial="hidden" animate="visible" className="max-w-xl py-4 pe-4 font-light tracking-tighter">
+                            initial="hidden" animate="visible" className="max-w-xl py-8 lg:py-4 lg:pe-4 font-light tracking-tighter ms-1 lg:ms-2">
                             {HERO_CONTENT}
                         </motion.p>
                     </div>

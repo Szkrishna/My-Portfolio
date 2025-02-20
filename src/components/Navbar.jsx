@@ -14,7 +14,7 @@ const Navbar = ({ scrollToSection, sections }) => {
         zIndex: "2",
       }}
     >
-      <div className="flex flex-shrink-0 items-center">
+      <div className="flex flex-shrink-0 items-center px-3">
         <div className="mx-2 w-auto">
           <p className="text-5xl font-medium bg-gradient-to-r from-green-700 to-red-700 via-blue-700 bg-clip-text text-transparent tracking-tight">
             KS
@@ -41,7 +41,7 @@ const Navbar = ({ scrollToSection, sections }) => {
           </a>
           <Tooltip id="coding-ninjas" place="bottom" content="Coding Ninjas" style={{ fontSize: "16px" }} />
 
-          <a href="https://drive.google.com/file/d/1je0PiGzCMeypxA6B3zgIvIbW19gt8NI1/view?usp=sharing" target="_blank" data-tooltip-id="cv">
+          <a href="https://drive.google.com/file/d/1PnPW8lcZMS-B0uorm8mVpwgy52hFIAti/view?usp=drive_link" target="_blank" data-tooltip-id="cv">
             <FaFileAlt />
           </a>
           <Tooltip id="cv" place="bottom" content="Download CV" style={{ fontSize: "16px" }} />

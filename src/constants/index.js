@@ -87,7 +87,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "JNS Elite Stay, Sector 51, Gurgaon HR, 122005",
+  address: "Sector 51, Gurgaon HR, 122005",
   phoneNo: "+91 9818713013",
   email: "krisnas9792@gmail.com",
 };
