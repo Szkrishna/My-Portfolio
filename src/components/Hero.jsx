@@ -18,7 +18,7 @@ const Hero = () => {
                 <div className="w-full lg:w-1/2">
                     <div className="flex flex-col items-start sm:items-start lg:items-start">
                         <motion.h1 variants={{hidden: { opacity: 0, y: -50 }, visible: { opacity: 1, y: 0, transition: { duration: 1.5 } },}}
-                            initial="hidden" animate="visible" className="pb-[36px] text-6xl font-thin tracking-tight lg:text-8xl">
+                            initial="hidden" animate="visible" className="pb-[36px] text-5xl font-thin tracking-tight lg:text-8xl" style={{ lineHeight: 0.75 }}>
                             Krishna Singh
                         </motion.h1>
 
@@ -28,7 +28,7 @@ const Hero = () => {
                         </motion.span>
 
                         <motion.p variants={{hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1.5, delay: 1 } },}}
-                            initial="hidden" animate="visible" className="max-w-xl py-8 lg:py-4 lg:pe-4 font-light tracking-tighter ms-1 lg:ms-2">
+                            initial="hidden" animate="visible" className="max-w-xl pb-6 pt-4 lg:py-4 lg:pe-4 font-light tracking-tighter ms-1 lg:ms-2">
                             {HERO_CONTENT}
                         </motion.p>
                     </div>
