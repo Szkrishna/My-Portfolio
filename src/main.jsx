@@ -16,19 +16,21 @@ const ThemeToggleButton = () => {
         right: "20px",
         top: "665px",
         padding: "10px",
-        background: theme === "light" ? "#333" : "#fff",
-        color: theme === "light" ? "#fff" : "#333",
+        background: theme === "light" ? "#808080" : "#fff",
+        color: theme === "light" ? "#fff" : "#808080",
         border: "none",
         borderRadius: "12px",
         cursor: "pointer",
         zIndex: 1000,
         transition: "0.3s",
+        ...(window.innerWidth <= 768 && { top: "40px", right: "20px" }),
       }}
     >
       {theme === "light" ? "🌙" : "☀️"}
     </button>
   );
 };
+
 
 const MainApp = () => (
   <ThemeProvider>
