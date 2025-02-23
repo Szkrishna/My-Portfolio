@@ -41,7 +41,7 @@ const Navbar = ({ scrollToSection, sections }) => {
           </a>
           <Tooltip id="coding-ninjas" place="bottom" content="Coding Ninjas" style={{ fontSize: "16px" }} />
 
-          <a href="https://drive.google.com/file/d/1PnPW8lcZMS-B0uorm8mVpwgy52hFIAti/view?usp=drive_link" target="_blank" data-tooltip-id="cv">
+          <a href="https://drive.google.com/file/d/1qZ5N_m124JOQGdqAkXmlnlYtYA9iR0GA/view?usp=sharing" target="_blank" data-tooltip-id="cv">
             <FaFileAlt />
           </a>
           <Tooltip id="cv" place="bottom" content="Download CV" style={{ fontSize: "16px" }} />
