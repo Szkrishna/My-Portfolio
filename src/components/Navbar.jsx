@@ -92,6 +92,7 @@ import { motion } from "framer-motion";
 
 const Navbar = ({ scrollToSection, sections }) => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("Home");
 
   const navItems = [
     { label: "Home", ref: sections.heroRef },
@@ -103,35 +104,59 @@ const Navbar = ({ scrollToSection, sections }) => {
   ];
 
   return (
-    <nav className="fixed z-20 w-full bg-white dark:bg-[#0f172a] text-gray-900 dark:text-white border-b border-gray-200 dark:border-gray-700 py-4 px-4 sm:px-8 md:px-16 lg:px-24">
+    <nav className="fixed z-20 w-full bg-[#091022] text-white border-b border-gray-700 py-4 px-4 sm:px-8 md:px-16 lg:px-24">
       <div className="flex justify-between items-center">
         {/* Logo + Social Icons */}
         <div className="flex items-center gap-6">
           <motion.p
             whileHover={{ scale: 1.2, rotate: 5 }}
             transition={{ type: "spring", stiffness: 300 }}
-            className="text-4xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent"
+            className="text-4xl font-bold bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent"
           >
             KS
           </motion.p>
 
-          <div className="flex gap-4 text-xl text-gray-800 dark:text-gray-100">
-            <a whileHover={{ scale: 1.2, rotate: 5 }} transition={{ type: "spring", stiffness: 400 }} href="https://www.linkedin.com/in/krishna-singh-5a2244196/" target="_blank" rel="noopener noreferrer" data-tooltip-id="linkedin">
+          <div className="flex gap-4 text-xl">
+            <a
+              href="https://www.linkedin.com/in/krishna-singh-5a2244196/"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-tooltip-id="linkedin"
+              className="text-[#0A66C2] hover:scale-110 transition-transform"
+            >
               <FaLinkedin />
             </a>
             <Tooltip id="linkedin" place="bottom" content="LinkedIn" style={{ fontSize: "14px", backgroundColor: "#6B7280" }} />
 
-            <a href="https://github.com/Szkrishna" target="_blank" rel="noopener noreferrer" data-tooltip-id="github">
+            <a
+              href="https://github.com/Szkrishna"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-tooltip-id="github"
+              className="text-gray-300 hover:text-white hover:scale-110 transition-transform"
+            >
               <FaGithub />
             </a>
             <Tooltip id="github" place="bottom" content="GitHub" style={{ fontSize: "14px", backgroundColor: "#6B7280" }} />
 
-            <a href="https://www.hackerrank.com/profile/krisnas9792" target="_blank" rel="noopener noreferrer" data-tooltip-id="hackerrank">
+            <a
+              href="https://www.hackerrank.com/profile/krisnas9792"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-tooltip-id="hackerrank"
+              className="text-[#2EC866] hover:scale-110 transition-transform"
+            >
               <FaHackerrank />
             </a>
             <Tooltip id="hackerrank" place="bottom" content="HackerRank" style={{ fontSize: "14px", backgroundColor: "#6B7280" }} />
 
-            <a href="https://drive.google.com/file/d/11NMxvbG-mLYy4Js1Us8QCKHR18HNsiZd/view?usp=sharing" target="_blank" rel="noopener noreferrer" data-tooltip-id="cv">
+            <a
+              href="https://drive.google.com/file/d/11NMxvbG-mLYy4Js1Us8QCKHR18HNsiZd/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-tooltip-id="cv"
+              className="text-yellow-400 hover:scale-110 transition-transform"
+            >
               <FaFileAlt />
             </a>
             <Tooltip id="cv" place="bottom" content="Download CV" style={{ fontSize: "14px", backgroundColor: "#6B7280" }} />
@@ -145,8 +170,13 @@ const Navbar = ({ scrollToSection, sections }) => {
               whileHover={{ scale: 1.15 }}
               transition={{ type: "spring", stiffness: 300 }}
               key={index}
-              onClick={() => scrollToSection(item.ref)}
-              className="rounded px-3 py-2 text-sm font-medium text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700"
+              onClick={() => {
+                scrollToSection(item.ref);
+                setActiveSection(item.label);
+              }}
+              className={`rounded px-3 py-2 text-sm font-medium transition-colors duration-200
+                ${activeSection === item.label ? "bg-blue-600 text-white" : "text-white"}
+                hover:bg-gray-700`}
             >
               {item.label}
             </motion.button>
@@ -156,14 +186,14 @@ const Navbar = ({ scrollToSection, sections }) => {
         {/* Mobile Hamburger */}
         <div className="sm:hidden">
           <button onClick={() => setMenuOpen(!menuOpen)}>
-            {menuOpen ? <X size={26} /> : <Menu size={26} />}
+            {menuOpen ? <X size={26} className="text-white" /> : <Menu size={26} className="text-white" />}
           </button>
         </div>
       </div>
 
       {/* Mobile Dropdown Menu */}
       {menuOpen && (
-        <div className="mt-2 flex flex-col sm:hidden bg-gray-100 dark:bg-gray-900 border-t border-gray-300 dark:border-gray-800 p-2">
+        <div className="mt-2 flex flex-col sm:hidden bg-[#1e293b] border-t border-gray-600 p-2">
           {navItems.map((item, index) => (
             <motion.button
               whileHover={{ scale: 1.1 }}
@@ -171,9 +201,12 @@ const Navbar = ({ scrollToSection, sections }) => {
               key={index}
               onClick={() => {
                 scrollToSection(item.ref);
+                setActiveSection(item.label);
                 setMenuOpen(false);
               }}
-              className="text-left px-3 py-2 text-sm text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700"
+              className={`text-left px-3 py-2 text-sm transition-colors duration-200
+                ${activeSection === item.label ? "bg-blue-600 text-white" : "text-white"}
+                hover:bg-gray-700`}
             >
               {item.label}
             </motion.button>
