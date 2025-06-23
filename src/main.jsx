@@ -14,7 +14,7 @@ const ThemeToggleButton = () => {
       style={{
         position: "fixed",
         right: "20px",
-        top: "665px",
+        bottom: "40px",
         padding: "10px",
         background: theme === "light" ? "#808080" : "#fff",
         color: theme === "light" ? "#fff" : "#808080",
@@ -23,7 +23,7 @@ const ThemeToggleButton = () => {
         cursor: "pointer",
         zIndex: 1000,
         transition: "0.3s",
-        ...(window.innerWidth <= 768 && { top: "40px", right: "20px" }),
+        ...(window.innerWidth <= 768 && { bottom: "40px", right: "20px" }),
       }}
     >
       {theme === "light" ? "🌙" : "☀️"}
@@ -35,7 +35,9 @@ const ThemeToggleButton = () => {
 const MainApp = () => (
   <ThemeProvider>
     <Router>
-      <ThemeToggleButton />
+      <div className="hidden sm:block">
+        <ThemeToggleButton />
+      </div>
       <App />
     </Router>
   </ThemeProvider>
