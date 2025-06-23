@@ -35,7 +35,7 @@ const ThemeToggleButton = () => {
 const MainApp = () => (
   <ThemeProvider>
     <Router>
-      <div className="hidden sm:block">
+      <div className="hidden lg:block">
         <ThemeToggleButton />
       </div>
       <App />

@@ -3,16 +3,18 @@ import { useEffect, useState } from "react";
 
 const ThemeToggleButton = ({ inline = false }) => {
   const { theme, toggleTheme } = useTheme();
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 576);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth < 576);
+    const handleResize = () => setIsMobile(window.innerWidth < 1024);
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const styles = {
-    padding: "8px 12px",
+  const baseStyles = {
+    padding: isMobile ? "4px 6px" : "8px 12px",
+    fontSize: isMobile ? "14px" : "18px",
     background: theme === "light" ? "#808080" : "#fff",
     color: theme === "light" ? "#fff" : "#808080",
     border: "none",
@@ -21,10 +23,10 @@ const ThemeToggleButton = ({ inline = false }) => {
     transition: "0.3s",
   };
 
-  // Inline mode (used inside header for mobile)
+  // Inline mode or mobile
   if (inline || isMobile) {
     return (
-      <button onClick={toggleTheme} style={{ ...styles, padding: "4px 6px" }}>
+      <button onClick={toggleTheme} style={baseStyles}>
         {theme === "light" ? "🌙" : "☀️"}
       </button>
     );
@@ -34,7 +36,7 @@ const ThemeToggleButton = ({ inline = false }) => {
     <button
       onClick={toggleTheme}
       style={{
-        ...styles,
+        ...baseStyles,
         position: "fixed",
         right: "20px",
         bottom: "40px",

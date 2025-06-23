@@ -3,7 +3,7 @@ import { FaLinkedin, FaGithub, FaHackerrank, FaFileAlt } from "react-icons/fa";
 import { Tooltip } from "react-tooltip";
 import { Menu, X } from "lucide-react";
 import { motion } from "framer-motion";
-import ThemeToggleButton from "./ThemeToggleButton"; // Adjust path as needed
+import ThemeToggleButton from "./ThemeToggleButton";
 
 const Navbar = ({ scrollToSection, sections }) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -37,7 +37,7 @@ const Navbar = ({ scrollToSection, sections }) => {
   }, [menuOpen]);
 
   return (
-    <nav className="fixed z-20 w-full bg-[#091022] text-white border-b border-gray-700 py-4 px-4 sm:px-8 md:px-16 lg:px-24">
+    <nav className="fixed z-20 w-full bg-[#091022] text-white border-b border-gray-700 py-4 px-4 sm:px-8 lg:px-16 xl:px-24">
       <div className="flex justify-between items-center">
         {/* Logo + Social Icons */}
         <div className="flex items-center gap-6">
@@ -97,7 +97,7 @@ const Navbar = ({ scrollToSection, sections }) => {
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden sm:flex gap-2">
+        <div className="hidden lg:flex gap-2">
           {navItems.map((item, index) => (
             <motion.button
               whileHover={{ scale: 1.15 }}
@@ -117,7 +117,7 @@ const Navbar = ({ scrollToSection, sections }) => {
         </div>
 
         {/* Mobile Theme Toggle + Hamburger */}
-        <div className="flex items-center sm:hidden gap-3">
+        <div className="flex items-center lg:hidden gap-3">
           <ThemeToggleButton inline={true} />
           <button onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? <X size={26} className="text-white" /> : <Menu size={26} className="text-white" />}
@@ -129,7 +129,7 @@ const Navbar = ({ scrollToSection, sections }) => {
       {menuOpen && (
         <div
           ref={dropdownRef}
-          className="mt-2 flex flex-col sm:hidden bg-[#1e293b] border-t border-gray-600 p-2"
+          className="mt-2 flex flex-col lg:hidden bg-[#1e293b] border-t border-gray-600 p-2"
         >
           {navItems.map((item, index) => (
             <motion.button
