@@ -1,4 +1,4 @@
-import { useTheme } from "../common/ThemeContext";
+import { useTheme } from "./ThemeContext";
 import { useEffect, useState } from "react";
 
 const ThemeToggleButton = ({ inline = false }) => {

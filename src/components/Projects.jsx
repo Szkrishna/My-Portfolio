@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
     return (
-        <div className="border-b border-neutral-300 pb-4 px-8">
+        <div className="border-b border-neutral-300 pb-4 px-24 lg:px-8">
             <motion.h2 whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: -100 }} transition={{ duration: 0.5 }} className="mb-12 lg:my-20 text-center text-4xl">Projects</motion.h2>
             <div>
                 {PROJECTS.map((project, index) => (

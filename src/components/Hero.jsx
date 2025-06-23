@@ -16,7 +16,7 @@ const Hero = () => {
         <div className="border-b border-neutral-300 lg:mt-[80px] px-8">
             <div className="flex flex-wrap lg:py-[100px] lg:px-[180px] pt-[160px] pb-[80px]">
                 <div className="w-full lg:w-1/2">
-                    <div className="flex flex-col items-start lg:items-start">
+                    <div className="flex flex-col items-center lg:items-start">
                         <motion.h1 variants={{hidden: { opacity: 0, y: -50 }, visible: { opacity: 1, y: 0, transition: { duration: 1.5 } },}}
                             initial="hidden" animate="visible" className="pb-[36px] text-5xl font-thin tracking-tight lg:text-8xl" style={{ lineHeight: 0.75 }}>
                             Krishna Singh

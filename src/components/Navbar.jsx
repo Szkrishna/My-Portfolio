@@ -3,7 +3,7 @@ import { FaLinkedin, FaGithub, FaHackerrank, FaFileAlt } from "react-icons/fa";
 import { Tooltip } from "react-tooltip";
 import { Menu, X } from "lucide-react";
 import { motion } from "framer-motion";
-import ThemeToggleButton from "./ThemeToggleButton";
+import ThemeToggleButton from "../common/themeToggleButton";
 
 const Navbar = ({ scrollToSection, sections }) => {
   const [menuOpen, setMenuOpen] = useState(false);
