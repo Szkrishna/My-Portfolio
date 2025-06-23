@@ -1,13 +1,14 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { FaLinkedin, FaGithub, FaHackerrank, FaFileAlt } from "react-icons/fa";
 import { Tooltip } from "react-tooltip";
 import { Menu, X } from "lucide-react";
 import { motion } from "framer-motion";
-import ThemeToggleButton from "./themeToggleButton";
+import ThemeToggleButton from "./ThemeToggleButton"; // Adjust path as needed
 
 const Navbar = ({ scrollToSection, sections }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("Home");
+  const dropdownRef = useRef(null);
 
   const navItems = [
     { label: "Home", ref: sections.heroRef },
@@ -17,6 +18,23 @@ const Navbar = ({ scrollToSection, sections }) => {
     { label: "Projects", ref: sections.projectsRef },
     { label: "Contact", ref: sections.contactsRef },
   ];
+
+  // Close dropdown on outside click
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setMenuOpen(false);
+      }
+    };
+
+    if (menuOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [menuOpen]);
 
   return (
     <nav className="fixed z-20 w-full bg-[#091022] text-white border-b border-gray-700 py-4 px-4 sm:px-8 md:px-16 lg:px-24">
@@ -98,7 +116,7 @@ const Navbar = ({ scrollToSection, sections }) => {
           ))}
         </div>
 
-        {/* Mobile Toggle Theme Button and Hamburger */}
+        {/* Mobile Theme Toggle + Hamburger */}
         <div className="flex items-center sm:hidden gap-3">
           <ThemeToggleButton inline={true} />
           <button onClick={() => setMenuOpen(!menuOpen)}>
@@ -109,7 +127,10 @@ const Navbar = ({ scrollToSection, sections }) => {
 
       {/* Mobile Dropdown Menu */}
       {menuOpen && (
-        <div className="mt-2 flex flex-col sm:hidden bg-[#1e293b] border-t border-gray-600 p-2">
+        <div
+          ref={dropdownRef}
+          className="mt-2 flex flex-col sm:hidden bg-[#1e293b] border-t border-gray-600 p-2"
+        >
           {navItems.map((item, index) => (
             <motion.button
               whileHover={{ scale: 1.1 }}
