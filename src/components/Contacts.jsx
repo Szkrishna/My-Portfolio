@@ -19,7 +19,7 @@ const Contacts = () => {
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 50 }}
           transition={{ duration: 1 }}
-          className="my-4 lg:my-2 text-lg flex flex-col lg:flex-row items-center justify-center gap-1 lg:gap-2"
+          className="my-4 lg:my-2 flex flex-row items-center justify-center gap-1 lg:gap-2"
         >
           <FaPhoneAlt className="text-lg text-green-500" />
           <a href="tel:+919818713013" className="hover:underline">
@@ -31,7 +31,7 @@ const Contacts = () => {
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: 100 }}
           transition={{ duration: 1.5 }}
-          className="my-4 lg:my-2 text-lg flex flex-col lg:flex-row items-center justify-center gap-1 lg:gap-2"
+          className="my-4 lg:my-2 flex flex-row items-center justify-center gap-1 lg:gap-2"
         >
           <FaEnvelope className="text-lg text-red-500" />
           <a href="mailto:krisnas9792@gmail.com" className="hover:underline">
@@ -43,7 +43,7 @@ const Contacts = () => {
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 50 }}
           transition={{ duration: 1 }}
-          className="my-4 lg:my-2 text-lg flex flex-col lg:flex-row items-center justify-center gap-1 lg:gap-2"
+          className="my-4 lg:my-2 flex flex-row items-center justify-center gap-1 lg:gap-2"
         >
           <FaLinkedin className="text-lg text-blue-600" />
           <a
