@@ -100,7 +100,7 @@ const Navbar = ({ scrollToSection, sections }) => {
         <div className="hidden lg:flex gap-2">
           {navItems.map((item, index) => (
             <motion.button
-              whileHover={{ scale: 1.15 }}
+              whileHover={{ scale: 1.1 }}
               transition={{ type: "spring", stiffness: 300 }}
               key={index}
               onClick={() => {

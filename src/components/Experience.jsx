@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Experience = () => {
     return (
-        <div className="border-b border-neutral-300 pb-4 px-24 lg:px-8">
+        <div className="border-b border-neutral-300 pb-4 px-4 md:px-8 lg:px-12 xl:px-16">
             <motion.h2 whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: -100 }} transition={{ duration: 0.5 }} className="mb-12 lg:my-20 text-center text-4xl">Experience</motion.h2>
             <div>
                 {EXPERIENCES.map((experience, index) => (

@@ -1,10 +1,9 @@
-import { CONTACT } from "../constants";
 import { motion } from "framer-motion";
-import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaLinkedin } from "react-icons/fa";
+import { FaEnvelope, FaPhoneAlt, FaLinkedin } from "react-icons/fa";
 
 const Contacts = () => {
   return (
-    <div className="mb-8 px-8">
+    <div className="mb-8 px-4 md:px-8 lg:px-12 xl:px-16">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
