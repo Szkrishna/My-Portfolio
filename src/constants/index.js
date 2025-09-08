@@ -14,32 +14,32 @@ export const ABOUT_TEXT = `I am a results-driven Full-Stack Web Developer with 3
 
 export const EXPERIENCES = [
   {
-    year: "Apr 2024 - Present",
-    role: "Project Engineer 2",
-    company: "Oges Solutions",
-    description: `Led a team in developing and maintaining web applications using JavaScript, TypeScript, Angular, React.js, and Node.js, Python, FastAPI. Implemented RESTful APIs and integrated with MySQL and MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["HTML", "CSS", "Javascript", "TypeScript", "Angular", "React.js", "TailwindCSS", "Node.js", "Express.js", "MongoDB"],
+    year: "Apr 2025 - Present",
+    role: "Project Engineer III (Project Lead)",
+    company: "Oges Software, Gurugram",
+    description: `Led development of the Project Cost Management Application (PCMA) using Angular + .NET Core + MySQL for real-time cost monitoring across manpower, transport, and equipment. Managed a team of developers, implementing role-based workflows and ensuring timely delivery. Coordinated with clients to capture requirements and translate them into optimized solutions.`,
+    technologies: ["Angular", ".NET Core", "MySQL", "TypeScript", "JavaScript", "HTML", "CSS"],
   },
   {
-    year: "July 2023 - Mar 2024",
+    year: "Jul 2024 - Mar 2025",
+    role: "Project Engineer II",
+    company: "Oges Software, Gurugram",
+    description: `Delivered Accommodation Booking Management System (ABMS) with Google Maps integration, hotel onboarding via third-party APIs, and notification services. Developed Heavy Vehicle Management System (HVMS) featuring automated assignments, camera-based inspections, email notifications, and a GenAI-powered chatbot. Designed dashboards and interactive charts using Chart.js and ApexCharts for fleet and accommodation management.`,
+    technologies: ["Angular", "Node.js", "Python(FastAPI)", "MySQL", "Chart.js", "ApexCharts", "Google Maps API", "GenAI"],
+  },
+  {
+    year: "Jul 2023 - Jun 2024",
     role: "Project Engineer",
-    company: "Oges Solutions",
-    description: `Designed, developed and maintained web applications using Angular and TypeScript, ensuring dynamic and responsive user interfaces. Utilized HTML and CSS to create visually appealing and user-friendly designs. Integrated FastAPI backend services with MySQL databases for efficient data handling. Optimized frontend performance with JavaScript best practices.`,
-    technologies: ["HTML", "CSS", "Javascript", "TypeScript", "Angular", "BootStrap", "Python(FastAPI)", "JSON", "Jquery", "MySQL"],
+    company: "Oges Software, Gurugram",
+    description: `Built the CVC Dashboard with Angular + Python (FastAPI) + MySQL, implementing real-time analytics using Chart.js, ApexCharts, ECharts, and Plotly.js. Created reusable UI components and optimized data visualization for oil & gas lifecycle monitoring.`,
+    technologies: ["Angular", "Python(FastAPI)", "MySQL", "Chart.js", "ApexCharts", "ECharts", "Plotly.js"],
   },
   {
     year: "Mar 2022 - Mar 2023",
     role: "Software Engineer",
-    company: "Coforge",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Python. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["HTML", "CSS", "JavaScript", "TypeScript", "Python", "MySQL"],
-  },
-  {
-    year: "Aug 2021 - Oct 2021",
-    role: "Frontend Developer Intern",
-    company: "Bolt IOT",
-    description: `Leveraged HTML, CSS, JavaScript, and Bootstrap to develop a visually appealing and user-friendly UI for the online car rental service. Designed and implemented a captivating home page and customer login page to provide a seamless onboarding experience.`,
-    technologies: ["HTML", "CSS", "JavaScript", "BootStrap"],
+    company: "Coforge Limited, Noida",
+    description: `Developed Well Services Dashboard (React + Node.js + MySQL) with interactive charts (Chart.js) and execution tracking diagrams. Enhanced validation, notification workflows, and integrated backend APIs for seamless data flow.`,
+    technologies: ["React.js", "Node.js", "MySQL", "Chart.js", "JavaScript", "HTML", "CSS"],
   },
 ];
 
