@@ -4,13 +4,17 @@ import project3 from "../assets/projects/project-3.png";
 import project4 from "../assets/projects/project-4.png";
 import project5 from "../assets/projects/project-5.png";
 import project6 from "../assets/projects/project-6.png";
-import project7 from "../assets/projects/project-7a.png";
+import project7 from "../assets/projects/project-7.png";
 import project8 from "../assets/projects/project-8.png";
 import project9 from "../assets/projects/project-9.png";
+import project10 from "../assets/projects/project-10.png";
+import project11 from "../assets/projects/project-11.png";
 
-export const HERO_CONTENT = `I am a Full-Stack Developer with 3+ years of experience in building and deploying scalable enterprise web applications, specializing in Angular (Advanced) and .NET Core with additional expertise in React, Node.js, FastAPI, and MySQL. I have successfully delivered projects such as PCMA (Project Cost Management Application) for role-based cost monitoring, HVMS (Heavy Vehicle Management System) with GenAI chatbot and automated inspections, ABMS (Accommodation Booking Management System) with Google Maps integration and third-party APIs, and the CVC Dashboard featuring advanced data visualizations using Chart.js, ApexCharts, ECharts, and Plotly.js. Skilled in designing interactive dashboards, workflow automation tools, and data-driven applications, I focus on enhancing business efficiency and decision-making while working effectively in Agile teams using Jira, Bitbucket, and GitHub.`;
+// export const HERO_CONTENT = `I am a Full-Stack Developer with 4+ years of experience building scalable enterprise applications using Angular (Advanced), React, and .NET Core, with additional expertise in Node.js, FastAPI, and MySQL. I have successfully delivered projects such as the Enterprise Operations Finance Platform for HooLiv, PCMA (Project Cost Management Application) for real-time cost tracking, HVMS (Heavy Vehicle Management System) with multi-level approvals and automated workflows, ABMS (Accommodation Booking Management System) with Google Maps integration, and the CVC Dashboard featuring advanced visualizations using Chart.js, ApexCharts, ECharts, and Plotly.js. Skilled in designing interactive dashboards, workflow automation tools, and data-driven applications, I focus on enhancing business efficiency and decision-making while leading and collaborating in agile teams using Jira, Bitbucket, and GitHub.`;
 
-export const ABOUT_TEXT = `I am a results-driven Full-Stack Web Developer with 3+ years of experience in designing and delivering scalable enterprise applications. Specialized in Angular (Advanced) and .NET Core, with additional expertise in React, Node.js, FastAPI, and MySQL, I excel at building interactive dashboards, workflow automation tools, and data-driven solutions that improve business efficiency. My portfolio includes key projects such as PCMA (Project Cost Management Application) for cost monitoring, HVMS (Heavy Vehicle Management System) with GenAI chatbot and automated inspections, ABMS (Accommodation Booking Management System) with Google Maps and third-party integrations, and the CVC Dashboard featuring real-time analytics with advanced visualization libraries like Chart.js, ApexCharts, ECharts, and Plotly.js. I thrive in agile team environments, leveraging GitHub, Bitbucket, and Jira to streamline development workflows, and I am passionate about exploring emerging technologies, solving complex challenges, and driving innovation through clean, efficient, and user-focused applications.`;
+export const HERO_CONTENT = `I am a Lead Full-Stack Developer with over 4 years of experience specializing in Angular, .NET Core, and Node.js. I focus on architecting scalable enterprise solutions, interactive data visualizations, and automated workflows that drive business efficiency. Passionate about leading agile teams, I transform complex requirements into high-performance, user-centric applications.`;
+
+export const ABOUT_TEXT = `I am a results-driven Full-Stack Developer with 4+ years of experience in designing and delivering scalable enterprise applications. Specialized in Angular (Advanced) and .NET Core, with additional expertise in React, Node.js, FastAPI, and MySQL, I excel at building interactive dashboards, workflow automation tools, and data-driven solutions that improve business efficiency. My portfolio includes key projects such as the Enterprise Operations Finance Platform for HooLiv, PCMA (Project Cost Management Application) for real-time cost tracking, HVMS (Heavy Vehicle Management System) with automated workflows, ABMS (Accommodation Booking Management System) with Google Maps and third-party integrations, and the CVC Dashboard with real-time analytics and advanced visualizations using Chart.js, ApexCharts, ECharts, and Plotly.js. I thrive in agile team environments, leveraging GitHub, Bitbucket, and Jira to streamline development workflows, and I am passionate about leading teams, solving complex challenges, and driving innovation through clean, efficient, and user-focused applications.`;
 
 export const EXPERIENCES = [
   {
@@ -92,12 +96,12 @@ export const PROJECTS = [
     description: "New Travel is a travel blogging platform designed for users to create, edit, and publish rich content about their travel experiences. It features a user-friendly interface with support for rich text formatting, media uploads, and interactive comment sections. Each user has a dedicated profile to manage their blog posts and engage with other travelers. The platform is fully responsive and styled with Bootstrap to ensure a seamless experience across devices.",
     technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
   },
-  {
-    title: "My Todo's List",
-    image: project1,
-    description: "Developed a full-stack To-Do List Application using React.js for the frontend and Node.js with MySQL for the backend. The application allows users to create, update, delete, and manage tasks efficiently with a clean and responsive UI.",
-    technologies: ["JavaScript", "SCSS", "React", "Node.js", "MySQL"],
-  }
+  // {
+  //   title: "My Todo's List",
+  //   image: project1,
+  //   description: "Developed a full-stack To-Do List Application using React.js for the frontend and Node.js with MySQL for the backend. The application allows users to create, update, delete, and manage tasks efficiently with a clean and responsive UI.",
+  //   technologies: ["JavaScript", "SCSS", "React", "Node.js", "MySQL"],
+  // }
 ];
 
 export const CONTACT = {
