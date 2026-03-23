@@ -31,10 +31,15 @@ const ThemeToggleButton = () => {
   );
 };
 
-
 const MainApp = () => (
   <ThemeProvider>
-    <Router>
+    {/* Added future flags to resolve React Router v7 deprecation warnings */}
+    <Router
+      future={{
+        v7_startTransition: true,
+        v7_relativeSplatPath: true,
+      }}
+    >
       <div className="hidden lg:block">
         <ThemeToggleButton />
       </div>
