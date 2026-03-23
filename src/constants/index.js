@@ -22,34 +22,72 @@ Currently leading engineering at HooLiv, I specialize in designing complex REST 
 
 I am passionate about building reusable UI architectures and optimizing system performance across both SQL and NoSQL environments. From automating multi-level workflows to integrating GenAI-powered tools, I focus on delivering clean, maintainable code that solves real-world operational challenges.`;
 
+// export const EXPERIENCES = [
+//   {
+//     year: "Apr 2025 - Present",
+//     role: "Project Engineer III (Project Lead)",
+//     company: "Oges Software, Gurugram",
+//     description: `Led development of the Project Cost Management Application (PCMA) using Angular + .NET Core + MySQL for real-time cost monitoring across manpower, transport, and equipment. Managed a team of developers, implementing role-based workflows and ensuring timely delivery. Coordinated with clients to capture requirements and translate them into optimized solutions.`,
+//     technologies: ["Angular", ".NET Core", "MySQL", "TypeScript", "JavaScript", "HTML", "CSS"],
+//   },
+//   {
+//     year: "Jul 2024 - Mar 2025",
+//     role: "Project Engineer II",
+//     company: "Oges Software, Gurugram",
+//     description: `Delivered Accommodation Booking Management System (ABMS) with Google Maps integration, hotel onboarding via third-party APIs, and notification services. Developed Heavy Vehicle Management System (HVMS) featuring automated assignments, camera-based inspections, email notifications, and a GenAI-powered chatbot. Designed dashboards and interactive charts using Chart.js and ApexCharts for fleet and accommodation management.`,
+//     technologies: ["Angular", "Node.js", "Python(FastAPI)", "MySQL", "Chart.js", "ApexCharts", "Google Maps API", "GenAI"],
+//   },
+//   {
+//     year: "Jul 2023 - Jun 2024",
+//     role: "Project Engineer",
+//     company: "Oges Software, Gurugram",
+//     description: `Built the CVC Dashboard with Angular + Python (FastAPI) + MySQL, implementing real-time analytics using Chart.js, ApexCharts, ECharts, and Plotly.js. Created reusable UI components and optimized data visualization for oil & gas lifecycle monitoring.`,
+//     technologies: ["Angular", "Python(FastAPI)", "MySQL", "Chart.js", "ApexCharts", "ECharts", "Plotly.js"],
+//   },
+//   {
+//     year: "Mar 2022 - Mar 2023",
+//     role: "Software Engineer",
+//     company: "Coforge Limited, Noida",
+//     description: `Developed Well Services Dashboard (React + Node.js + MySQL) with interactive charts (Chart.js) and execution tracking diagrams. Enhanced validation, notification workflows, and integrated backend APIs for seamless data flow.`,
+//     technologies: ["React.js", "Node.js", "MySQL", "Chart.js", "JavaScript", "HTML", "CSS"],
+//   },
+// ];
+
 export const EXPERIENCES = [
   {
-    year: "Apr 2025 - Present",
+    year: "Sep 2025 - Present",
+    role: "Technology Lead",
+    company: "HooLiv, Delhi",
+    description: `Leading the design and development of scalable enterprise applications and REST APIs. Architecting high-performance backend services with a focus on MongoDB and MySQL integration. Building interactive KPI-driven dashboards and analytics platforms using Chart.js and ApexCharts. Mentoring a team of developers, conducting code reviews, and establishing best practices for clean architecture and system optimization.`,
+    technologies: ["Angular", ".NET Core", "Node.js", "MongoDB", "MySQL", "Chart.js", "ApexCharts"],
+  },
+  {
+    year: "Apr 2025 - Sep 2025",
     role: "Project Engineer III (Project Lead)",
-    company: "Oges Software, Gurugram",
-    description: `Led development of the Project Cost Management Application (PCMA) using Angular + .NET Core + MySQL for real-time cost monitoring across manpower, transport, and equipment. Managed a team of developers, implementing role-based workflows and ensuring timely delivery. Coordinated with clients to capture requirements and translate them into optimized solutions.`,
-    technologies: ["Angular", ".NET Core", "MySQL", "TypeScript", "JavaScript", "HTML", "CSS"],
+    company: "Oges Solutions, Gurugram",
+    description: `Led the architecture and delivery of the Project Cost Management Application (PCMA) for real-time tracking of site, manpower, and equipment costs. Managed and mentored a 10-member engineering team across multiple projects, improving development workflows and accelerating delivery timelines. Collaborated directly with clients to translate complex business needs into technical solutions.`,
+    technologies: ["Angular", ".NET Core", "MySQL", "TypeScript", "Agile", "Jira"],
   },
   {
-    year: "Jul 2024 - Mar 2025",
+    year: "June 2024 - Mar 2025",
     role: "Project Engineer II",
-    company: "Oges Software, Gurugram",
-    description: `Delivered Accommodation Booking Management System (ABMS) with Google Maps integration, hotel onboarding via third-party APIs, and notification services. Developed Heavy Vehicle Management System (HVMS) featuring automated assignments, camera-based inspections, email notifications, and a GenAI-powered chatbot. Designed dashboards and interactive charts using Chart.js and ApexCharts for fleet and accommodation management.`,
-    technologies: ["Angular", "Node.js", "Python(FastAPI)", "MySQL", "Chart.js", "ApexCharts", "Google Maps API", "GenAI"],
+    company: "Oges Solutions, Gurugram",
+    description: `Developed a Fleet Management System featuring multi-level approval workflows and automated operational tracking. Designed data-driven dashboards illustrating the complete lifecycle of oil and gas operations using Chart.js and ApexCharts for real-time operational insights.`,
+    technologies: ["Angular", "Node.js", "Python(FastAPI)", "MySQL", "Chart.js", "ApexCharts"],
   },
   {
-    year: "Jul 2023 - Jun 2024",
+    year: "July 2023 - June 2024",
     role: "Project Engineer",
-    company: "Oges Software, Gurugram",
-    description: `Built the CVC Dashboard with Angular + Python (FastAPI) + MySQL, implementing real-time analytics using Chart.js, ApexCharts, ECharts, and Plotly.js. Created reusable UI components and optimized data visualization for oil & gas lifecycle monitoring.`,
+    company: "Oges Solutions, Gurugram",
+    description: `Integrated advanced charting libraries to visualize real-time production and inspection data. Developed reusable UI components and optimized frontend performance for improved responsiveness. Collaborated with backend teams to integrate REST APIs and ensure maintainable code through rigorous code reviews.`,
     technologies: ["Angular", "Python(FastAPI)", "MySQL", "Chart.js", "ApexCharts", "ECharts", "Plotly.js"],
   },
   {
     year: "Mar 2022 - Mar 2023",
     role: "Software Engineer",
     company: "Coforge Limited, Noida",
-    description: `Developed Well Services Dashboard (React + Node.js + MySQL) with interactive charts (Chart.js) and execution tracking diagrams. Enhanced validation, notification workflows, and integrated backend APIs for seamless data flow.`,
-    technologies: ["React.js", "Node.js", "MySQL", "Chart.js", "JavaScript", "HTML", "CSS"],
+    description: `Developed an employee leave management portal with automated email notification workflows. Improved form validation and UX workflows, resulting in a 30% reduction in support tickets. Generated comprehensive monthly reports and summaries for HR management.`,
+    technologies: ["React.js", "Node.js", "MySQL", "JavaScript", "HTML", "CSS"],
   },
 ];
 
