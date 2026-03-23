@@ -84,7 +84,7 @@ const Navbar = ({ scrollToSection, sections }) => {
             <Tooltip id="hackerrank" place="bottom" content="HackerRank" style={{ fontSize: "14px", backgroundColor: "#6B7280" }} />
 
             <a
-              href="https://drive.google.com/file/d/1eXFurTxjERCGtwjZgeEuT_z_MlVHOCwn/view?usp=sharing"
+              href="https://drive.google.com/file/d/1wa50yTkghOh6r5EvGNu8atw88L8n6lQM/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               data-tooltip-id="cv"
