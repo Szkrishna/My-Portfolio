@@ -93,6 +93,18 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
+    title: "Nestovian (Realset)",
+    image: project11,
+    description: "A premium relocation and mobility platform designed to simplify global living for corporate teams and expatriates. Built with Next.js 14 and TypeScript, the application provides a seamless, end-to-end housing and settlement service. The interface is optimized for high performance and responsiveness using Tailwind CSS 4, ensuring a stress-free transition for assignees through verified accommodations and personalized digital support.",
+    technologies: ["Next.js 14", "React 18", "TypeScript", "Tailwind CSS 4", "PostCSS", "Autoprefixer"]
+  },
+  {
+    title: "JNS Fitness",
+    image: project10,
+    description: "An integrated lifestyle and community living ecosystem based in Sector 51, Gurugram. This full-stack application features a React 19 frontend with complex UI components like Embla Carousel, Swiper, and Leaflet maps for location tracking. The backend is a robust Node.js and Express API utilizing Sequelize ORM with MySQL for managing sports, fitness, and community living data, all styled with modern Tailwind CSS animations via Framer Motion.",
+    technologies: ["React 19", "Node.js", "Express", "MySQL", "Sequelize", "Framer Motion", "Leaflet", "Vite", "Tailwind CSS 4"]
+  },
+  {
     title: "Travel Mitra",
     image: project9,
     description: "TravelMitra is a modern, responsive travel assistance web application built using Next.js 15. It offers features such as secure authentication, session management, and a sleek UI design with Tailwind CSS and Radix UI. The platform is optimized for performance using React 18 and TypeScript, with state management via React Hook Form and Zod validation. It also integrates Firebase for real-time backend services and Genkit for AI-powered enhancements. With dark/light mode support, animated transitions, and dynamic charts via Recharts, TravelMitra ensures a seamless and elegant user experience across devices.",
