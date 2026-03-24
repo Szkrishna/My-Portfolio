@@ -13,8 +13,8 @@ const container = (delay) => ({
 })
 const Hero = () => {
     return (
-        <div className="border-b border-neutral-300 lg:mt-[40px] px-4 md:px-8 lg:px-12 xl:px-16">
-            <div className="flex flex-wrap lg:py-[100px] lg:px-[120px] pt-[160px] pb-[80px] justify-between max-w-[1200px] mx-auto">
+        <div className="border-b border-neutral-300 lg:mt-[40px] px-8 md:px-16">
+            <div className="flex flex-wrap lg:py-[100px] lg:px-[120px] pt-[160px] pb-[48px] lg:pb-[64px] justify-between max-w-[1200px] mx-auto">
                 <div className="w-full xl:w-1/2 max-w-2xl flex flex-col items-center xl:items-start">
                     <motion.h1 variants={{ hidden: { opacity: 0, y: -50 }, visible: { opacity: 1, y: 0, transition: { duration: 1.5 } }, }}
                         initial="hidden" animate="visible" className="pb-[16px] text-5xl font-thin tracking-tight lg:text-6xl xl:text-7xl xxl:text-8xl" style={{ lineHeight: 0.75 }}>
@@ -27,7 +27,7 @@ const Hero = () => {
                     </motion.span>
 
                     <motion.p variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1.5, delay: 1 } }, }}
-                        initial="hidden" animate="visible" className="max-w-2xl p-2 font-light text-lg tracking-wide">
+                        initial="hidden" animate="visible" className="max-w-2xl p-2 font-light text-lg tracking-wide mb-2 lg:mb-0">
                         {HERO_CONTENT}
                     </motion.p>
                 </div>

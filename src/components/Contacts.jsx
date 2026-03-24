@@ -28,7 +28,7 @@ const contactDetails = [
 const Contacts = () => {
   return (
     <div
-      className="py-20 px-4 md:px-8 lg:px-12 xl:px-16 border-t"
+      className="p-8 md:p-16 lg:px-12 xl:px-16 border-t"
       style={{ borderColor: "var(--card-border)" }}
     >
       <motion.div
@@ -64,16 +64,7 @@ const Contacts = () => {
             whileHover={{ y: -8, transition: { duration: 0.2 } }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
             className="flex flex-col items-center p-8 rounded-2xl border transition-all duration-300 shadow-sm hover:shadow-md"
-            style={{
-              backgroundColor: "var(--background-color)",
-              borderColor: "var(--border-color)",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = item.hoverBorder;
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = "var(--card-border)";
-            }}
+            style={{ borderColor: item.hoverBorder }}
           >
             <div className="text-3xl mb-4">{item.icon}</div>
             <span

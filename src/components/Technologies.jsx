@@ -25,12 +25,12 @@ const Technologies = () => {
   ];
 
   return (
-    <div className="border-b border-neutral-300 pb-24 px-4 md:px-8 lg:px-12 xl:px-16">
+    <div className="border-b border-neutral-300 pb-8 lg:pb-20 px-8 md:px-16 lg:px-12 xl:px-16">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1.5 }}
-        className="mb-12 lg:my-20 text-center text-4xl"
+        className="my-8 lg:my-16 text-center text-4xl"
       >
         Technologies
       </motion.h2>
