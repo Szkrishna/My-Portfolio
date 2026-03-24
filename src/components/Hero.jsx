@@ -27,7 +27,7 @@ const Hero = () => {
                     </motion.span>
 
                     <motion.p variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1.5, delay: 1 } }, }}
-                        initial="hidden" animate="visible" className="max-w-2xl p-2 font-light text-md md:text-lg tracking-wide mb-2 lg:mb-0">
+                        initial="hidden" animate="visible" className="max-w-2xl p-1 font-light text-md md:text-lg tracking-wide mb-4 lg:mb-0">
                         {HERO_CONTENT}
                     </motion.p>
                 </div>
